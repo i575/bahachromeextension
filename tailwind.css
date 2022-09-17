@@ -1,0 +1,18 @@
+@import "tailwind-preflight.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply cursor-pointer mr-2 py-1 px-2 bg-[rgba(0,0,0,0.1)] rounded-[2px] inline-flex items-center justify-center border-solid border-1 border-transparent;
+  }
+
+  .btn-icon {
+    @apply text-[#333333] mr-1;
+  }
+
+  .highlight {
+    @apply bg-[rgba(0,176,255,0.4)] absolute left-0 top-0 w-full h-0 z-1;
+  }
+}

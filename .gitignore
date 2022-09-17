@@ -1,0 +1,4 @@
+node_modules
+dist
+deploy-recipe/tailwindcss/dist-configs
+.idea

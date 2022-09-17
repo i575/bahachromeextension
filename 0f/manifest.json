@@ -1,0 +1,33 @@
+{
+  "name": "巴哈擴充",
+  "description": "僅在巴哈姆特上可用的 chrome 擴充",
+  "version": "0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://home.gamer.com.tw/*",
+        "https://forum.gamer.com.tw/*",
+        "https://forum.gamer.com.tw/*"
+      ],
+      "css": ["content-script.css"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": ["management"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/public/icons/icon@16.jpg",
+      "32": "/public/icons/icon@32.jpg",
+      "48": "/public/icons/icon@48.jpg",
+      "128": "/public/icons/icon@128.jpg"
+    }
+  },
+  "icons": {
+    "16": "/public/icons/icon@16.jpg",
+    "32": "/public/icons/icon@32.jpg",
+    "48": "/public/icons/icon@48.jpg",
+    "128": "/public/icons/icon@128.jpg"
+  }
+}

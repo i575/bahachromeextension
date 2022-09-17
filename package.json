@@ -1,0 +1,30 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node deploy-recipe/build.js -f 0 -tcs \"popup.js,content-script.js\"",
+    "build": "cross-env NODE_ENV=production node deploy-recipe/build.js -f 0 -tcs \"popup.js,content-script.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@types/alpinejs": "^3.7.0",
+    "@types/chrome": "^0.0.197",
+    "@types/node": "^18.7.18",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.15.7",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^10.1.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@vue/reactivity": "^3.2.39",
+    "alpinejs": "^3.10.3",
+    "commander": "^9.4.0"
+  }
+}
